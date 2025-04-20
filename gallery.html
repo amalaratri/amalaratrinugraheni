@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Gallery</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Amala Ratri Nugraheni</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container text-center">
+            <h1 class="fade-in">Portrait Gallery</h1>
+        </div>
+    </header>
+
+    <!-- Gallery Filter -->
+    <section class="gallery-filter py-4">
+        <div class="container text-center">
+            <div class="filter-buttons">
+                <button class="btn btn-filter active" data-filter="all">All Portraits</button>
+                <button class="btn btn-filter" data-filter="color">Color</button>
+                <button class="btn btn-filter" data-filter="bw">Black & White</button>
+                <button class="btn btn-filter" data-filter="artistic">Artistic</button>
+                <button class="btn btn-filter" data-filter="candid">Candid</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Gallery Item 1 -->
+                <div class="col-md-4 mb-4 gallery-item fade-in" data-category="color">
+                    <div class="gallery-card hover-effect">
+                        <img src="professional.jpg" alt="Professional Headshot" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h3>Professional Headshot</h3>
+                            <p>Color Portrait</p>
+                            <a href="#" class="btn btn-sm btn-light">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 2 -->
+                <div class="col-md-4 mb-4 gallery-item fade-in" data-category="bw" style="animation-delay: 0.2s;">
+                    <div class="gallery-card hover-effect">
+                        <img src="bw.jpg" alt="Classic Black & White" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h3>Classic Portrait</h3>
+                            <p>Black & White</p>
+                            <a href="#" class="btn btn-sm btn-light">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 3 -->
+                <div class="col-md-4 mb-4 gallery-item fade-in" data-category="artistic" style="animation-delay: 0.4s;">
+                    <div class="gallery-card hover-effect">
+                        <img src="artis.jpg" alt="Artistic Portrait" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h3>Creative Lighting</h3>
+                            <p>Artistic Portrait</p>
+                            <a href="#" class="btn btn-sm btn-light">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 4 -->
+                <div class="col-md-4 mb-4 gallery-item fade-in" data-category="candid" style="animation-delay: 0.6s;">
+                    <div class="gallery-card hover-effect">
+                        <img src="candid.jpg" alt="Candid Moment" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h3>Natural Smile</h3>
+                            <p>Candid Portrait</p>
+                            <a href="#" class="btn btn-sm btn-light">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 5 -->
+                <div class="col-md-4 mb-4 gallery-item fade-in" data-category="color" style="animation-delay: 0.8s;">
+                    <div class="gallery-card hover-effect">
+                        <img src="outdoor.jpg" alt="Outdoor Portrait" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h3>Natural Light</h3>
+                            <p>Outdoor Portrait</p>
+                            <a href="#" class="btn btn-sm btn-light">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 6 -->
+                <div class="col-md-4 mb-4 gallery-item fade-in" data-category="bw" style="animation-delay: 1s;">
+                    <div class="gallery-card hover-effect">
+                        <img src="drama.jpg" alt="Dramatic Portrait" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h3>Dramatic Shadows</h3>
+                            <p>Black & White Portrait</p>
+                            <a href="#" class="btn btn-sm btn-light">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 7 -->
+                <div class="col-md-4 mb-4 gallery-item fade-in" data-category="artistic" style="animation-delay: 1.2s;">
+                    <div class="gallery-card hover-effect">
+                        <img src="double.jpg" alt="Double Exposure" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h3>Double Exposure</h3>
+                            <p>Artistic Portrait</p>
+                            <a href="#" class="btn btn-sm btn-light">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 8 -->
+                <div class="col-md-4 mb-4 gallery-item fade-in" data-category="candid" style="animation-delay: 1.4s;">
+                    <div class="gallery-card hover-effect">
+                        <img src="laugh.jpg" alt="Laughing Portrait" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h3>Genuine Laughter</h3>
+                            <p>Candid Portrait</p>
+                            <a href="#" class="btn btn-sm btn-light">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 9 -->
+                <div class="col-md-4 mb-4 gallery-item fade-in" data-category="color" style="animation-delay: 1.6s;">
+                    <div class="gallery-card hover-effect">
+                        <img src="studio.jpg" alt="Studio Portrait" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h3>Studio Lighting</h3>
+                            <p>Professional Portrait</p>
+                            <a href="#" class="btn btn-sm btn-light">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portrait Services Section -->
+    <section class="services-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Portrait Services</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="service-card hover-effect fade-in">
+                        <div class="service-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h3>Professional Headshots</h3>
+                        <p>Need a fresh, professional headshot for LinkedIn, your business profile, or company site?
+                            Let’s get you looking your best—effortlessly.</p>
+                        <ul class="service-list">
+                            <li>💡 Pro studio lighting</li>
+                            <li>👔 Multiple outfit changes welcome</li>
+                            <li>🧑‍💻 Retouched to perfection</li>
+                            <li>📸 Delivered digitally, ready to use</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card hover-effect fade-in" style="animation-delay: 0.2s;">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>Artistic Portraits</h3>
+                        <p>Let's create portraits that feel like you—bold, artistic, and totally unique.
+                            More than just a photo session, it’s a creative experience.</p>
+                        <ul class="service-list">
+                            <li>🎨 We plan the concept together</li>
+                            <li>💡 Fun, dramatic lighting setups</li>
+                            <li>🖌️ Artistic edits that stand out</li>
+                            <li>🖼️ Want prints? We’ve got options!</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card hover-effect fade-in" style="animation-delay: 0.4s;">
+                        <div class="service-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Family Portraits</h3>
+                        <p>Let's capture the love, laughter, and little moments that matter.
+                            Relaxed portrait sessions with the people you care about most.</p>
+                        <ul class="service-list">
+                            <li>🏡 Indoor or outdoor - your call</li>
+                            <li>👨‍👩‍👧‍👦 Group shots or solo moments</li>
+                            <li>🧸 Great with kids, no stress</li>
+                            <li>📚 Want a photo album? We can make it happen!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section py-5">
+        <div class="container text-center">
+            <h2>Ready for Your Portrait Session?</h2>
+            <p>Let's create beautiful portraits that capture your unique personality.</p>
+            <a href="contact.html" class="btn btn-outline-light mt-3 pulse-btn">Book a Session</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container text-center">
+            <div class="social-links mb-3">
+                <a href="https://wa.me/6285269211923" class="social-link" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://twitter.com/cakwelouveee?t=AgngeA9VBiAGs0gGvKCHSA&s=09" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/amalaratri?igsh=MXdydHI1ZGJwY3V5Nw==" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/amala-ratri-nugraheni-602564319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>&copy; 2023 Amala Ratri Nugraheni. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Gallery Filter Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.btn-filter');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
